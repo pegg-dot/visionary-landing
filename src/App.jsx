@@ -305,31 +305,12 @@ function Faq({ q, a }) {
   return (
     <details className="group rounded-2xl border border-white/10 bg-neutral-900/40 p-5">
       <summary className="cursor-pointer list-none font-medium flex items-center justify-between">
-        <span>{q}</span>
-        <span className="ml-4 text-neutral-400 group-open:rotate-45 transition">+</span>
-      </summary>
-      <p className="mt-3 text-neutral-300 text-sm">{a}</p>
-    </details>
-  );
-}
+        <span>{q}</span ------------------------------------------------------
 
-/* ------------------------------------------------------
-Quick Tailwind setup (if needed):
-1) npm i -D tailwindcss postcss autoprefixer && npx tailwindcss init -p
-2) tailwind.config.js: content: ["./index.html","./src/**/*.{js,ts,jsx,tsx}"]
-3) src/index.css: @tailwind base; @tailwind components; @tailwind utilities;
-4) Wrap your app with this component.
 
-Deploy:
-- Vercel: push repo → Import → set framework (React/Vite/Next) → Deploy.
-- Custom domain: Vercel Dashboard → Domains → Add → follow DNS prompts.
-- Replit: create React/Vite repl → paste this file → set Tailwind → publish.
 
-Form endpoint options:
-- Formspree: create project → copy endpoint → replace SUBMIT_ENDPOINT above.
-- Tally: create form → share → use "Webhooks"/"Email" or Tally embed instead of fetch.
-- Custom: create /api/subscribe that writes to Airtable/Sheets.
-------------------------------------------------------- */
+
+
 
 // --- Lightweight runtime tests (executed in browser console) ---
 try {
