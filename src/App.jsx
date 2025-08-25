@@ -305,9 +305,13 @@ function Faq({ q, a }) {
   return (
     <details className="group rounded-2xl border border-white/10 bg-neutral-900/40 p-5">
       <summary className="cursor-pointer list-none font-medium flex items-center justify-between">
-        <span>{q}</span ------------------------------------------------------
-
-
+        <span>{q}</span>
+        <span className="ml-4 text-neutral-400 group-open:rotate-45 transition">+</span>
+      </summary>
+      <p className="mt-3 text-neutral-300 text-sm">{a}</p>
+    </details>
+  );
+}
 
 
 
