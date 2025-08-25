@@ -5,8 +5,9 @@ import React, { useState } from "react";
 // - TailwindCSS styling; quick setup notes at bottom.
 // - Swap SUBMIT_ENDPOINT with your Formspree/Tally/own API endpoint.
 // - Accessible form, honeypot anti-bot, success/error states, basic analytics hooks via data-* attributes.
+// Replace with your actual Formspree endpoint to collect waitlist sign‑ups.
+const SUBMIT_ENDPOINT = "https://formspree.io/f/xvgbooze";
 
-const SUBMIT_ENDPOINT = "https://formspree.io/f/your-id-here"; // TODO: replace with your endpoint
 
 // Small utilities
 function validateEmail(v) {
